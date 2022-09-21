@@ -240,10 +240,12 @@ No, it’s to whom!`,`धनले कहिले पनि धनि हुन
 
 
 let jokeShow = document.querySelector(".jokes");
+let sound = new Audio('haha.mp3');
 let displayJokes = ()=>{
     let num = Math.floor(Math.random()*200);
     console.log(num)
-    jokeShow.innerText = jokes[num]
+    jokeShow.innerText = jokes[num];
+    sound.play();
     console.log(jokes[num-1])
 }
 console.log(jokes.length);
